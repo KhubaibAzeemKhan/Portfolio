@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    color: #fff;
+}
+
+*::selection {
+    color: #00D646;
+}
+
+:root {
+    --a: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #00D646;
+    border-radius: 50px;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+}
+
+main::before {
+    content: "";
+    background: url(images/contact.jpg) no-repeat center center / cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+nav {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 40px;
+}
+
+.names {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+.names a {
+    text-decoration: none;
+    transition: all linear 0.5s;
+
+}
+
+.names a:hover {
+    color: #00D646;
+}
+
+.names a:active {
+    color: #00D646;
+}
+
+.logo img {
+    height: 100px;
+    padding-right: 20px;
+    filter: invert(1);
+    transition: all ease 0.5s;
+}
+
+.logo img:hover {
+    filter: invert(0);
+}
+
+
+.contact {
+    /* height: 550px; */
+    width: 900px;
+    margin: auto    ;
+    background-color: #333B50;
+
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.left h2 {
+    font-size: 30px;
+}
+
+.left p {
+    /* text-align: center; */
+    width: 380px;
+    padding-top: 30px;
+}
+
+input,
+textarea {
+    color: #C3C3C2;
+    padding: 10px;
+    border: none;
+}
+
+input:hover {
+    background-color: #A1F1BB;
+}
+
+textarea:hover {
+    background-color: #A1F1BB;
+}
+
+.first {
+    display: flex;
+    gap: 8px;
+}
+
+/* .first input{
+    padding-right: -10px;
+} */
+#f-number {
+    margin-top: 15px;
+    padding-right: 201px;
+}
+
+#message-area {
+    margin-top: 15px;
+}
+
+#f-submit {
+    background-color: #00D646;
+    color: #fff;
+    margin-top: 10px;
+    /* padding-right: 201px; */
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.f-icons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+#f-elem {
+    position: absolute;
+    top: -40px;
+    left: 300px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+#f-elem:hover {
+    scale: 1.1;
+}
+
+#f-span {
+    display: none;
+}
+
+#x-elem {
+    position: absolute;
+    top: -40px;
+    left: 350px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+#x-elem:hover {
+    scale: 1.1;
+}
+
+#x-span {
+    display: none;
+}
+
+#i-elem {
+    position: absolute;
+    top: -40px;
+    left: 400px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+#i-elem:hover {
+    scale: 1.1;
+}
+
+#i-span {
+    display: none;
+}
+
+#li-elem {
+    position: absolute;
+    top: -40px;
+    left: 450px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+#li-elem:hover {
+    scale: 1.1;
+}
+#li-span {
+    display: none;
+}
+
+.f-icons i {
+    font-size: 25px;
+}
+
+
+footer {
+    background-color: #17d657;
+    height: 115px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-logo img {
+    width: 150px;
+    filter: invert(1);
+}
+
+.footer-logo img:hover {
+    scale: 0.9;
+    transition: all ease-in-out 0.5s;
+}
+
+.content::selection {
+    color: #000;
+}
+.close i{
+    display: none;
+}
+.left1{
+    height: 100%;
+    width: 50%;
+    background-color: #333B50;
+    z-index: 99;
+    position: absolute;
+    display: none;
+    transition: all ease 0.5s;
+}
+.left1 i{
+    padding:10px;
+}
+.menu{
+    margin-top: 80px;
+}
+.menu a{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.menu a:hover{
+    background-color: #232937;
+}
+
+@media only screen and (max-width: 905px) {
+    .contact {
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 805px) {
+    .left h2 {
+        font-size: 25px;
+    }
+    
+    .left p {
+        width: 350px;
+        padding-top: 30px;
+    }
+    .contact {
+        width: 750px;
+    }
+    #f-elem {
+        left: 280px;
+    }
+    #x-elem {
+        left: 330px;
+    }
+    #i-elem {
+        left: 380px;
+    }
+    #li-elem {
+        left: 430px;
+    }
+}
+@media only screen and (max-width: 755px) {
+    .left h2 {
+        font-size: 25px;
+    }
+    
+    .left p {
+        width: 270px;
+        padding-top: 30px;
+
+    }
+    .contact {
+        width: 670px;
+    }
+    #f-elem {
+        left: 250px;
+    }
+    #x-elem {
+        left: 300px;
+    }
+    #i-elem {
+        left: 350px;
+    }
+    #li-elem {
+        left: 400px;
+    }
+}
+@media only screen and (max-width: 675px) {
+    #f-name{
+        width: 135px;
+    }
+    #f-email{
+        width: 135px;
+    }
+    #f-number{
+        padding-right: 150px;
+    }
+    textarea{
+        width: 300px;
+        
+    }
+    .contact {
+        width: 600px;
+    }
+    #f-elem {
+        left: 250px;
+    }
+    #x-elem {
+        left: 300px;
+    }
+    #i-elem {
+        left: 350px;
+    }
+    #li-elem {
+        left: 400px;
+    }
+}
+@media only screen and (max-width: 605px) {
+    .main-content {
+        flex-direction: column;
+        padding: 0;
+    }
+    .left p {
+        width: 320px;
+        padding-top: 10px;
+    }
+    .contact{
+        padding-bottom: 10px;
+        width: 500px;
+    }
+    #f-elem {
+        left: 230px;
+    }
+    #x-elem {
+        left: 280px;
+    }
+    #i-elem {
+        left: 330px;
+    }
+    #li-elem {
+        left: 380px;
+    }
+    
+}
+@media only screen and (max-width: 530px) {
+    .close i{
+        display: initial;
+        padding: 10px;
+    }
+    .names a{
+        display: none;
+    }
+    nav{
+        justify-content: left;
+        gap: 150px;
+    }
+    
+}
+@media only screen and (max-width: 505px) {
+    .contact{
+        padding-bottom: 10px;
+        width: 400px;
+    }
+    #f-elem {
+        left: 180px;
+    }
+    #x-elem {
+        left: 230px;
+    }
+    #i-elem {
+        left: 280px;
+    }
+    #li-elem {
+        left: 330px;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+    nav{
+        gap: 120px;
+    }
+    
+}
+@media only screen and (max-width: 405px) {
+    .contact{
+        padding-bottom: 10px;
+        width: 350px;
+    }
+    #f-elem {
+        left: 150px;
+    }
+    #x-elem {
+        left: 200px;
+    }
+    #i-elem {
+        left: 250px;
+    }
+    #li-elem {
+        left: 300px;
+    }
+    nav{
+        gap: 80px;
+    }
+}
+@media only screen and (max-width: 355px) {
+    .contact{
+        width: 325px;
+    }
+    nav{
+        gap: 70px;
+    }
+}
